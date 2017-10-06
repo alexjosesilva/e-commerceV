@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <title>:. Loja Virtual .:</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+
+                <td height="109" background="imagens/topo_bg.gif">
+                    <table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="12"></td>
+                            <td><img src="imagens/logo.gif" width="143" height="42"></td>
+                            <td align="right" valign="top">
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><a href="/cadastro"><img src="imagens/cadastrese.gif" width="92" height="22" border="0"></a></td>
+
+                                        <td><img src="imagens/login.gif" alt="Login" width="160" height="22" border="0" alt="" /></td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                    <form name="formlogin" id="formlogin" action="logar">
+                                        <tr>
+                                            <td width="153" height="57" align="center" background="imagens/login_bg.gif">
+                                                <table width="129" height="39" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+
+                                                        <td colspan="2">
+                                                            <input type="text" name="login" id="login" class="classlogin" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="password" name="login" id="senha" class="classlogin" /></td>
+                                                        <td><input name="imageField" type="image" src="imagens/ok_cinza.gif" alt="OK" /></td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </form>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td height="25" background="imagens/barra_cores.gif">&nbsp;</td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td valign="top" bgcolor="#EAEAEA">
+                                <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                    <tr>
+                                        <td valign="top" bgcolor="#EAEAEA">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td height="30" bgcolor="#7D7D7D"><img src="imagens/spacer.gif" width="10" height="1" alt="" /><img src="imagens/categorias.gif" width="68" height="14" alt="" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="1" bgcolor="#FFFFFF"><img src="imagens/spacer.gif" width="153" height="1" alt="" /></td>
+                                                </tr>
+                                                <?php
+                                                foreach ($categorias as $cat) {
+                                                ?>
+                                                <tr>
+                                                    <td height="20">
+                                                        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td width="10"><img src="imagens/spacer.gif" width="10" height="1" alt="" /></td>
+
+                                                                <td>
+                                                                    <a href="listarProdutos/<?=$cat->id?>" class="texto"><?=$cat->nome?></a>
+                                                                </td>
+                                                                <td width="10"><img src="imagens/spacer.gif" width="10" height="1" alt="" /></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="1" bgcolor="#FFFFFF"><img src="imagens/spacer.gif" width="1" height="1" alt="" /></td>
+                                                </tr>
+                                                <?php 
+                                                } 
+                                                ?>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="1" valign="top" bgcolor="#DCDCDDC">
+
+                                <table width="1"  border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="30" bgcolor="#FFFFFF"><img src="imagens/spacer.gif" width="1" height="1" alt="" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top">
+                                <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+
+                                        <td height="30" bgcolor="#AEAEAE">
+                                            <form name="busca" action="buscarProdutos">
+                                                <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td width="10"></td>
+                                                        <td width="35"><img src="imagens/lupa.gif" width="30" height="23" alt="" /></td>
+                                                        <td width="53"><img src="imagens/buscar.gif" width="45" height="13" alt="" /></td>
+                                                        <td width="145"><input name="termo" type="text" class="textfield" id="termo" value="" /></td>
+
+                                                        <td width="145">
+                                                            <select name="categoria" class="textfield">
+                                                                <option value="">:: Todas ::</option>
+                                                                <?php
+                                                                foreach ($categorias as $cat) {
+                                                                ?>
+                                                                <option  value="<?=$cat->id?>"><?=$cat->nome?></option>
+                                                                <?
+                                                                }
+                                                                ?>
+                                                            </select>
+                                                        </td>
+                                                        <td><input name="ok" type="image" id="ok" src="imagens/ok_cinza.gif" width="29" height="18" border="0" /></td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1" bgcolor="#FFFFFF"><img src="imagens/spacer.gif" width="1" height="1" alt="" /></td>
+                                    </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="10"></td>
+
+                                        <td class="texto">&raquo; <a href="home" class="texto">Home</a></td>
+                                        <td width="10"></td>
+                                    </tr>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                                    <tr>
+                                        <?php 
+                                        $x = 0;
+                                        foreach ($produtos as $prod) {
+                                            $x++;
+                                        ?>
+                                        <td valign="top" width="50%">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+
+                                                    <td bgcolor="#C5C5C5"><table width="100%" border="0" cellspacing="1" cellpadding="0">
+                                                            <tr>
+                                                                <td height="15" align="center" bgcolor="#9FCB06" class="categoria" style="color:#000000"><?=$prod->categoria->nome?></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                                                        <tr>
+                                                                            <td width="10">&nbsp;</td>
+
+                                                                            <td><table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                                                                    <tr>
+                                                                                        <td class="texto">&nbsp;</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="center"><a href="/detalharProduto/<?=$prod->id?>" class="texto"><img src="imagens/galeria/<?=$prod->id?>.jpg" width="68" height="85" border="0"></a></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td><a href="/detalharProduto/<?=$prod->id?>" class="texto"><b><?=$prod->nome?></b></a> </td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="texto"><?=$prod->descricao?></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="texto">&nbsp;</td>
+                                                                                    </tr>
+                                                                                </table></td>
+
+                                                                            <td width="10">&nbsp;</td>
+                                                                        </tr>
+                                                                    </table></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                                                        <tr>
+                                                                            <td width="55" bgcolor="#7D7D7D"><img src="imagens/valor.gif" width="45" height="24"></td>
+                                                                            <td bgcolor="#7D7D7D" class="preco">R$ <?php printf('%.2f', $prod->preco)?> </td>
+
+                                                                            <td bgcolor="#FFFFFF" width="1"><img src="imagens/spacer.gif" width="1" height="1"></td>
+                                                                            <td width="68"><a href="adicionarAoCarrinho/<?=$prod->id?>"><img src="imagens/comprar.gif" alt="Adicionar ao carrinho" width="68" height="24" border="0"></a></td>
+                                                                        </tr>
+                                                                    </table></td>
+                                                            </tr>
+                                                        </table></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <?php
+                                            if ($x % 2 == 0) {
+                                                  echo "</tr><tr>";
+                                            }
+                                        }
+                                        ?>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="1" valign="top" bgcolor="#DCDCDDC">
+                                <table width="1"  border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                        <td height="30" bgcolor="#FFFFFF"><img src="imagens/spacer.gif" width="1" height="1" alt="" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="195" valign="top">
+                                <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td height="30" bgcolor="#AEAEAE"><a href="/exibirCarrinho"><img src="imagens/carrinho.gif" alt="Meu carrinho" width="122" height="19" border="0"></a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td height="1" bgcolor="#FFFFFF"></td>
+                                    </tr>
+                                    <tr class="textocarrinho">
+                                        <td bgcolor="#E2F6FF" style="padding: 5px; border: 1px dashed #333399">Nenhum item adicionado ao carrinho até o momento!</td>
+                                    </tr>
+                                    <tr class="textocarrinho">
+                                        <td align="right" bgcolor="#D1E5F3">
+
+                                            Itens: <span class="valorfinal">00</span> &nbsp;
+                                            Total: <span class="valorfinal">0.00</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+
+                                    </tr>
+                                </table></td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <td valign="top" height="1" bgcolor="#FFFFFF"></td>
+            </tr>
+            <tr>
+
+                <td height="20" bgcolor="#7D7D7D"><table width="100%"  border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="10"></td>
+                            <td class="preco">Designer: Thiago Nunes</td>
+                            <td width="90"><a href="http://www.php.net" target="_blank"><img src="imagens/phppowered.png" alt="PHP5 Powered" width="80" height="15" border="0"></a></td>
+                            <td width="90"><a href="http://pear.php.net" target="_blank"><img src="imagens/pearpowered.png" alt="PEAR" width="80" height="15" border="0"></a></td>
+                            <td width="90"><a href="http://planet-php.net" target="_blank"><img src="imagens/planet-php-button-2.jpg" alt="Planet PHP" width="80" height="15" border="0"></a></td>
+                        </tr>
+
+                    </table></td>
+            </tr>
+        </table>
+    </body>
+</html>

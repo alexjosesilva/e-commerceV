@@ -1,0 +1,62 @@
+#######################################################################
+#
+#      Fácil MVC 
+#
+# ->   Indexes gera um arquivo com a lista do conteúdo
+#      de um diretório sempre que a URL chamada apontar
+#      pra um diretório que não tenha arquivo index 
+#      (como index.html ou index.php)
+#
+# -> - Indexes desliga essa opção e gera Forbidden nesse caso
+#
+#
+# ->   MultiViews em URLs que apontem para um diretório que não exista
+#      faz o Apache procurar por arquivos com o mesmo nome e qualquer extensão
+#      Assim: /caminho/pra/diretorio pode achar /caminho/pra/diretorio.php
+#
+# -> - MultiViews no nosso caso evita index (ação) ser considerado index.php 
+#      (index.php é o nosso arquivo Front-Controller)
+#
+########################################################################
+ 
+options -Indexes -MultiViews
+
+
+#######################################################################
+#
+#   Desligando opções depreciadas e ligando nossa amiga short_open_tag 
+#
+########################################################################
+
+php_flag short_open_tag On
+php_flag magic_quotes_gpc Off
+php_flag magic_quotes_runtime Off
+php_flag magic_quotes_sybase Off
+php_flag register_globals Off
+
+
+#######################################################################
+#
+#   Ligando o ModRewrite 
+#
+#######################################################################
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    ###################################################################
+    # Direcionando chamadas a recursos em diretórios imagens, js, e css
+    # ao diretório da template default
+    ###################################################################
+    RewriteRule ^.*/?((imagens/)|(js/)|(css/))(.*)$ visao/template1/$1$5 [L]
+
+    ###################################################################
+    # Direcionando toda URL que não apontar para recurso existente para
+    # index.php passando o caminho para a variavel $url
+    ###################################################################
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
+
+

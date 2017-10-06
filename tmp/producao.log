@@ -1,0 +1,45 @@
+[08-Feb-2011 09:50:28] PHP Notice:  Undefined variable: naoexiste in /var/www/phpdeveloperT1/visao/template1/index.html on line 14
+[08-Feb-2011 09:50:28] PHP Stack trace:
+[08-Feb-2011 09:50:28] PHP   1. {main}() /var/www/phpdeveloperT1/index.php:0
+[08-Feb-2011 09:50:28] PHP   2. controlador\Controlador::invocarModulo() /var/www/phpdeveloperT1/index.php:93
+[08-Feb-2011 09:50:28] PHP   3. controlador\Controlador::invocarMetodo() /var/www/phpdeveloperT1/controlador/Controlador.php:102
+[08-Feb-2011 09:50:28] PHP   4. ReflectionMethod->invokeArgs() /var/www/phpdeveloperT1/controlador/Controlador.php:401
+[08-Feb-2011 09:50:28] PHP   5. controlador\Home->index() /var/www/phpdeveloperT1/controlador/Home.php:0
+[08-Feb-2011 09:50:28] PHP   6. controlador\Controlador::despachar() /var/www/phpdeveloperT1/controlador/Home.php:8
+[08-Feb-2011 09:50:28] PHP   7. include_once() /var/www/phpdeveloperT1/controlador/Controlador.php:142
+[08-Feb-2011 09:50:55] PHP Notice:  Undefined variable: naoexiste in /var/www/phpdeveloperT1/visao/template1/index.html on line 14
+[08-Feb-2011 09:50:55] PHP Stack trace:
+[08-Feb-2011 09:50:55] PHP   1. {main}() /var/www/phpdeveloperT1/index.php:0
+[08-Feb-2011 09:50:55] PHP   2. controlador\Controlador::invocarModulo() /var/www/phpdeveloperT1/index.php:93
+[08-Feb-2011 09:50:55] PHP   3. controlador\Controlador::invocarMetodo() /var/www/phpdeveloperT1/controlador/Controlador.php:102
+[08-Feb-2011 09:50:55] PHP   4. ReflectionMethod->invokeArgs() /var/www/phpdeveloperT1/controlador/Controlador.php:401
+[08-Feb-2011 09:50:55] PHP   5. controlador\Home->index() /var/www/phpdeveloperT1/controlador/Home.php:0
+[08-Feb-2011 09:50:55] PHP   6. controlador\Controlador::despachar() /var/www/phpdeveloperT1/controlador/Home.php:8
+[08-Feb-2011 09:50:55] PHP   7. include_once() /var/www/phpdeveloperT1/controlador/Controlador.php:142
+[08-Feb-2011 09:58:26] PHP Notice:  Undefined variable: naoexiste in /var/www/phpdeveloperT1/visao/template1/index.html on line 14
+[08-Feb-2011 09:58:26] PHP Stack trace:
+[08-Feb-2011 09:58:26] PHP   1. {main}() /var/www/phpdeveloperT1/index.php:0
+[08-Feb-2011 09:58:26] PHP   2. controlador\Controlador::invocarModulo() /var/www/phpdeveloperT1/index.php:93
+[08-Feb-2011 09:58:26] PHP   3. controlador\Controlador::invocarMetodo() /var/www/phpdeveloperT1/controlador/Controlador.php:102
+[08-Feb-2011 09:58:26] PHP   4. ReflectionMethod->invokeArgs() /var/www/phpdeveloperT1/controlador/Controlador.php:401
+[08-Feb-2011 09:58:26] PHP   5. controlador\Home->outro() /var/www/phpdeveloperT1/controlador/Home.php:0
+[08-Feb-2011 09:58:26] PHP   6. controlador\Controlador::despachar() /var/www/phpdeveloperT1/controlador/Home.php:13
+[08-Feb-2011 09:58:26] PHP   7. include_once() /var/www/phpdeveloperT1/controlador/Controlador.php:142
+[08-Feb-2011 09:58:28] PHP Notice:  Undefined variable: naoexiste in /var/www/phpdeveloperT1/visao/template1/index.html on line 14
+[08-Feb-2011 09:58:28] PHP Stack trace:
+[08-Feb-2011 09:58:28] PHP   1. {main}() /var/www/phpdeveloperT1/index.php:0
+[08-Feb-2011 09:58:28] PHP   2. controlador\Controlador::invocarModulo() /var/www/phpdeveloperT1/index.php:93
+[08-Feb-2011 09:58:28] PHP   3. controlador\Controlador::invocarMetodo() /var/www/phpdeveloperT1/controlador/Controlador.php:102
+[08-Feb-2011 09:58:28] PHP   4. ReflectionMethod->invokeArgs() /var/www/phpdeveloperT1/controlador/Controlador.php:401
+[08-Feb-2011 09:58:28] PHP   5. controlador\Home->outro() /var/www/phpdeveloperT1/controlador/Home.php:0
+[08-Feb-2011 09:58:28] PHP   6. controlador\Controlador::despachar() /var/www/phpdeveloperT1/controlador/Home.php:13
+[08-Feb-2011 09:58:28] PHP   7. include_once() /var/www/phpdeveloperT1/controlador/Controlador.php:142
+[08-Feb-2011 09:58:37] PHP Notice:  Undefined variable: naoexiste in /var/www/phpdeveloperT1/visao/template1/index.html on line 14
+[08-Feb-2011 09:58:37] PHP Stack trace:
+[08-Feb-2011 09:58:37] PHP   1. {main}() /var/www/phpdeveloperT1/index.php:0
+[08-Feb-2011 09:58:37] PHP   2. controlador\Controlador::invocarModulo() /var/www/phpdeveloperT1/index.php:93
+[08-Feb-2011 09:58:37] PHP   3. controlador\Controlador::invocarMetodo() /var/www/phpdeveloperT1/controlador/Controlador.php:102
+[08-Feb-2011 09:58:37] PHP   4. ReflectionMethod->invokeArgs() /var/www/phpdeveloperT1/controlador/Controlador.php:401
+[08-Feb-2011 09:58:37] PHP   5. controlador\Home->outro() /var/www/phpdeveloperT1/controlador/Home.php:0
+[08-Feb-2011 09:58:37] PHP   6. controlador\Controlador::despachar() /var/www/phpdeveloperT1/controlador/Home.php:13
+[08-Feb-2011 09:58:37] PHP   7. include_once() /var/www/phpdeveloperT1/controlador/Controlador.php:142

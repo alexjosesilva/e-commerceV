@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loja>
+  <categoria codigo="1">
+    <nome>Eletrodomésticos</nome>
+    <produto codigo="1">
+      <nome>TV 29'</nome>
+      <descricao>Ta lendo do xml óóóó, viu?, TV de 29 polegadas, tela plana</descricao>
+      <preco>900.25</preco>
+    </produto>
+    <produto codigo="2">
+      <nome>Caixa de som 2.1</nome>
+      <descricao>Caixas de som com Subwoofer 1200W - XYZ500 Prata</descricao>
+      <preco>139</preco>
+    </produto>
+    <produto codigo="3">
+      <nome>DVDokê</nome>
+      <descricao>DVD Player com DivX/Karaokê/MP3/WMA e Foto CD</descricao>
+      <preco>349.99</preco>
+    </produto>
+    <produto codigo="4">
+      <nome>Home Theater 6.1</nome>
+      <descricao>Home Theater 6.1 1000W com Receiver</descricao>
+      <preco>1299</preco>
+    </produto>
+    <produto codigo="5">
+      <nome>Geladeira</nome>
+      <descricao>Geladeira Frost Free</descricao>
+      <preco>1900</preco>
+    </produto>
+  </categoria>
+  <categoria codigo="2">
+    <nome>Móveis</nome>
+    <produto codigo="6">
+      <nome>Cama Box Casal</nome>
+      <descricao>Cama Box Casal 138X188X30cm</descricao>
+      <preco>799.99</preco>
+    </produto>
+    <produto codigo="7">
+      <nome>Armário acrílico</nome>
+      <descricao>Armário com portas de acrílico deslizantes</descricao>
+      <preco>1150</preco>
+    </produto>
+    <produto codigo="8">
+      <nome>Mesa de jantar</nome>
+      <descricao>Mesa de jantar ferro e tampo de vidro temperado</descricao>
+      <preco>1300</preco>
+    </produto>
+  </categoria>
+  <categoria codigo="3">
+    <nome>Telefonia</nome>
+    <produto codigo="9">
+      <nome>Telefone sem fio</nome>
+      <descricao>Telefone sem fio 900Mhz + Bina + Secretária</descricao>
+      <preco>96.92</preco>
+    </produto>
+    <produto codigo="10">
+      <nome>Celular GSM</nome>
+      <descricao>Aparelho celular GSM desbloqueado</descricao>
+      <preco>559.9</preco>
+    </produto>
+    <produto codigo="11">
+      <nome>Celular CDMA</nome>
+      <descricao>Aparelho celular CDMA desbloqueado</descricao>
+      <preco>199</preco>
+    </produto>
+  </categoria>
+  <categoria codigo="4">
+    <nome>Comida</nome>
+    <produto codigo="12">
+      <nome>Pão de forma</nome>
+      <descricao>Caixa de pão de forma</descricao>
+      <preco>3.2</preco>
+    </produto>
+    <produto codigo="13">
+      <nome>Ovos</nome>
+      <descricao>Bandeija de ovos</descricao>
+      <preco>2.5</preco>
+    </produto>
+    <produto codigo="14">
+      <nome>Queijo mussarela 200g</nome>
+      <descricao>Queijo Mussarela Importada Fatiada Bandeja 200g</descricao>
+      <preco>9</preco>
+    </produto>
+    <produto codigo="15">
+      <nome>Macarrão</nome>
+      <descricao>Pacote de macarrão LaMacarrona</descricao>
+      <preco>0.72</preco>
+    </produto>
+  </categoria>
+  <categoria codigo="5">
+    <nome>Vestuário</nome>
+    <produto codigo="16">
+      <nome>Camisa polo infantil</nome>
+      <descricao>Camisa polo infantil - Seninha - amarela</descricao>
+      <preco>25.5</preco>
+    </produto>
+    <produto codigo="17">
+      <nome>Short</nome>
+      <descricao>Short poliester preto</descricao>
+      <preco>15</preco>
+    </produto>
+    <produto codigo="18">
+      <nome>Calça jeans feminina</nome>
+      <descricao>Calça jeans feminina - com strass</descricao>
+      <preco>85</preco>
+    </produto>
+    <produto codigo="19">
+      <nome>Camisola verde</nome>
+      <descricao>Camisola verde chiffon aro e bojo</descricao>
+      <preco>29.99</preco>
+    </produto>
+  </categoria>
+  <categoria codigo="6">
+    <nome>Teste</nome>
+  </categoria>
+  <cliente codigo="1">
+  	<nome>Fulano</nome>
+  </cliente>
+  <cliente codigo="2">
+  	<nome>Beltrano</nome>
+  </cliente>
+  <cliente codigo="3">
+  	<nome>Sicrano</nome>
+  </cliente>
+</loja>

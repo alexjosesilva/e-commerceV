@@ -1,0 +1,117 @@
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.texto {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 11px;
+	color: #777777;
+	text-decoration: none;
+	line-height: 14px;
+}
+a.texto:hover {
+	color: #333333;
+}
+.textfield {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 11px;
+	color: #777777;
+	height: 18px;
+	width: 135px;
+	border: 1px solid #7F9DB9;
+}
+.categoria {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 9px;
+	line-height: 10px;
+	text-decoration:none;
+}
+.preco {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 11px;
+	line-height: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+input.classlogin {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #C4C1E3;
+	border: 1px solid #FFFFFF;
+	height: 16px;
+	margin: 3px;
+}
+#login {
+	width: 129px;
+}
+#senha {
+	width: 94px;
+}
+.textocarrinho {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 11px;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	height: 18px;
+}
+
+.textocarrinho .produto {
+	padding: 0px 3px 0px 7px;
+}
+
+.textocarrinho .valor {
+	padding-right: 5px;
+}
+
+.textocarrinho .valorfinal {
+	color: #007319;
+	padding-right: 5px;
+}
+
+
+.textocarrinho .qtd {
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+}
+
+#detalhesCarrinho {
+	border-collapse: collapse;
+}
+#detalhesCarrinho tr th, #detalhesCarrinho tr td {
+	border: 1px solid #C5C5C5;
+	padding: 1px 5px 1px 5px;
+}
+
+#detalhesCarrinho tr th {
+background-color: #EAEAEA;
+}
+
+#detalhesCarrinho tr.titulo th {
+	background-color: #D1E5F3;
+	color: #605BAA;
+
+}
+
+.quantidade {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 10px;
+	color: #777777;
+}
+
+.paginaLink, .paginaAtual {
+	font-family: Tahoma, Arial, Verdana;
+	font-size: 10px;
+	color: #666666;
+}
+
+.paginaAtual {
+	font-weight: bold;
+}
